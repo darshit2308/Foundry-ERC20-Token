@@ -1,0 +1,13 @@
+1) Use this command : 'forge install smartcontractkit/chainlink@42c74fcd30969bca26a9aadc07463d1c2f473b8c'
+
+2) forge remappings>remappings.txt -> create remappings.txt
+
+3) forge test --mt testRaffleRevertWhenYouDontPayEnough -> In order to run a specific test
+
+4) forge install transmissions11/solmate@v6 --no-commit -> To install the LinkToken.sol 's ERC-20 LinkToken
+
+5)  forge install foundry-rs/forge-std@v1.8.2 --no-commit -> Install this 
+
+6) forge install Cyfrin/foundry-devops --no-commit
+
+7) forge coverage --report debug > coverage.txt -> Gives us the lines of the code which are not yet tested, very usefull.

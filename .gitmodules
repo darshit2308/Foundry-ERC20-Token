@@ -1,0 +1,18 @@
+[submodule "web3/Foundry/foundry-fund-me-f23/lib/forge-std"]
+	path = web3/Foundry/foundry-fund-me-f23/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "web3/Foundry/foundry-fund-me-f23/lib/chainlink-brownie-contracts"]
+	path = web3/Foundry/foundry-fund-me-f23/lib/chainlink-brownie-contracts
+	url = https://github.com/smartcontractkit/chainlink-brownie-contracts
+[submodule "web3/Foundry/foundry-Lottery-Project/lib/forge-std"]
+	path = web3/Foundry/foundry-Lottery-Project/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "web3/Foundry/foundry-Lottery-Project/lib/chainlink"]
+	path = web3/Foundry/foundry-Lottery-Project/lib/chainlink
+	url = https://github.com/smartcontractkit/chainlink
+[submodule "web3/Foundry/foundry-Lottery-Project/lib/solmate"]
+	path = web3/Foundry/foundry-Lottery-Project/lib/solmate
+	url = https://github.com/transmissions11/solmate
+[submodule "web3/Foundry/foundry-Lottery-Project/lib/foundry-devops"]
+	path = web3/Foundry/foundry-Lottery-Project/lib/foundry-devops
+	url = https://github.com/Cyfrin/foundry-devops
