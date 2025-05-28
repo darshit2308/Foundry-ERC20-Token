@@ -7,8 +7,8 @@ import {Raffle} from "../../src/Raffle.sol";
 import {HelperConfig} from "../../script/HelperConfig.s.sol";
 import {Vm} from "../../lib/forge-std/src/Vm.sol";
 import {VRFCoordinatorV2_5Mock} from "../../lib/chainlink/contracts/src/v0.8/vrf/mocks/VRFCoordinatorV2_5Mock.sol";
-
-contract RaffleTest is Test {
+import {CodeConstants} from "../../script/HelperConfig.s.sol";
+contract RaffleTest is CodeConstants, Test {
     Raffle public raffle;
     HelperConfig public helperConfig;
 
@@ -221,7 +221,15 @@ contract RaffleTest is Test {
     */
     // Fullfill random words can only be called after performUpkeep is called
 
-    function testFulFillRandomWordsCanOnlyBeCalledAfterPerformUpKeep(uint256 randomRequestId)public raffleEntered
+    modifier skipFork() {
+        if(block.chainid != LOCAL_CHAIN_ID)
+        {
+            return ;
+        }
+        _;
+    }
+
+    function testFulFillRandomWordsCanOnlyBeCalledAfterPerformUpKeep(uint256 randomRequestId)public raffleEntered skipFork
     {
         vm.expectRevert(VRFCoordinatorV2_5Mock.InvalidRequest.selector); // We are expecting the revert error: InvalidRequest, if this is not the error,test fails.
         VRFCoordinatorV2_5Mock(vrfCoordinator).fulfillRandomWords( // Here we are calling the fulfillRandomWords function of VRFCoordinatorV2_5Mock contract before performUpkeep is called.
@@ -230,7 +238,7 @@ contract RaffleTest is Test {
         );
         // Now we need to test for all requestIds, so we will write fuzz test for it.So we will remove 0 and add a variable instead
     }
-    // function testFulFillRandomWordsPicksWinnerResetsAndSendMoney() public raffleEntered {
+    // function testFulFillRandomWordsPicksWinnerResetsAndSendMoney() public raffleEntered skipFork {
     //     // Arrange
     //     // Call fullfillRandomWords after performUpkeep
     //     // Reset the whole array of players
