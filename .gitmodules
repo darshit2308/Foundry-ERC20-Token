@@ -16,3 +16,9 @@
 [submodule "web3/Foundry/foundry-Lottery-Project/lib/foundry-devops"]
 	path = web3/Foundry/foundry-Lottery-Project/lib/foundry-devops
 	url = https://github.com/Cyfrin/foundry-devops
+[submodule "web3/Foundry/foundry-erc20-f23/lib/forge-std"]
+	path = web3/Foundry/foundry-erc20-f23/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "web3/Foundry/foundry-erc20-f23/lib/openzeppelin-contracts"]
+	path = web3/Foundry/foundry-erc20-f23/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts

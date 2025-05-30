@@ -1,0 +1,5 @@
+Important points about ERC20 Tokes: 
+- ERC20 is not any token itself, but ERC20 is a set of rules, or a blueprint for creating tokens on Ethereum Blockchain
+- It defines a set of functions and events that a smart contract must implement to be recognized as an ERC-20 token.
+
+1) forge install OpenZeppelin/openzeppelin-contracts -> To install the openzeppelin contracts 
