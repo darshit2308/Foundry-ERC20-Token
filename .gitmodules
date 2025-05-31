@@ -22,3 +22,12 @@
 [submodule "web3/Foundry/foundry-erc20-f23/lib/openzeppelin-contracts"]
 	path = web3/Foundry/foundry-erc20-f23/lib/openzeppelin-contracts
 	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "web3/Foundry/foundry-NFT-f23/lib/forge-std"]
+	path = web3/Foundry/foundry-NFT-f23/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "web3/Foundry/foundry-NFT-f23/lib/openzeppelin-contracts"]
+	path = web3/Foundry/foundry-NFT-f23/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "web3/Foundry/foundry-NFT-f23/lib/foundry-devops"]
+	path = web3/Foundry/foundry-NFT-f23/lib/foundry-devops
+	url = https://github.com/ChainAccelOrg/foundry-devops

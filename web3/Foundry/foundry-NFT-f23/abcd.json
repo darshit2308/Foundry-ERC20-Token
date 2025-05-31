@@ -1,0 +1,11 @@
+{
+  "name": "Daredevil",
+  "description": "Devil of Hell's Kitchen",
+  "image": "ipfs://QmchKkxGb2MZ7s1h8CAaiatrvdW8UjraSkvHjQxDorAbta",
+  "attributes": [
+    {
+      "trait_type": "devil",
+      "value": 100
+    }
+  ]
+}

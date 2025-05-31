@@ -1,0 +1,26 @@
+If you see any randome image,
+
+1) Add your image to IPFS
+2) Add a metadata file pointing to that image file present in IPFS
+3) Then grab that token uri of metadata and set is as your NFT.
+
+In order to see your files on IPFs, open IPFS desktop, copy the CID link, and then paste it like: 
+a) 'ipfs://link' -> ipfs://QmchKkxGb2MZ7s1h8CAaiatrvdW8UjraSkvHjQxDorAbta -> This direclty link to ipfs network which is distributed
+OR
+b) 'ipfs.io/ipfs/link' -> https://ipfs.io/ipfs/QmchKkxGb2MZ7s1h8CAaiatrvdW8UjraSkvHjQxDorAbta -> This links to ipfs centralised website
+
+- Type 'chisel' in terminal to enter an arena, where you can try randome codes and etc.
+
+1) forge install ChainAccelOrg/foundry-devops -> to install all necessary contracts
+
+2) make deploy ARGS="--network sepolia" -> To deploy the project on Sepolia testnet
+- Dont forget ETHERSCAN api key from etherscal
+- Dont forget RPC_URL from alchemy
+- Dont forget PRIVATE_KEY from metamask (account having sepolia testnet)
+
+3) make mint ARGS="--network sepolia" -> Run this command also to mint the NFT
+
+4) In order to see your NFT on metamask, do the following process: 
+    a) Copy the address of contract (When you run command 2), you get link of etherscan -> Go to that link -> Go to contract section -> Copy the contract address )
+    b) Now Go to metamask and import NFT
+    c) Enter the address and enter Id (starts with 0 , u enter 0 at start ).
